@@ -1,0 +1,65 @@
+/* body */
+
+#profile-page-container {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* profile card */
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.edit-icon {
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.edit-icon:hover {
+  color: #0056b3;
+}
+
+.email {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* my events card */
+
+.card {
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.card-header:first-child {
+  border-radius: 20px 20px 0 0;
+}
+
+.card-header {
+  background: #fff;
+  text-align: center;
+  font-family: 'Allerta';
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.event-details i {
+  color: #007bff;
+  margin-right: 0.5rem;
+}
+
+.event-details p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.countdown-container {
+  margin-top: 0.75rem;
+}
+

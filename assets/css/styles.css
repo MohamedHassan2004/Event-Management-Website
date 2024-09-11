@@ -1,0 +1,136 @@
+body {
+  font-family: 'ABeeZee';
+}
+
+main {
+  margin-top: 70px;
+}
+
+h2 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* ******************************************************************* */
+
+/* button */
+
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient( 120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70% );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  60% {
+    left: 100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/* ******************************************************************* */
+
+/* hero */
+
+#hero_section {
+  background-image: url(../../assets/img/private-parties.jpg);
+}
+
+#hero-section {
+  background: url("../../assets/img/wedding.jpg") no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner {
+  background-color: rgba(255,255,255,0.75);
+  margin: auto;
+  border-radius: 25px;
+}
+
+#hero-section p {
+  font-size: 21px;
+  color: darkslategray;
+}
+
+#hero-section .button.book-btn {
+  font-size: 21px;
+}
+
+/* services */
+
+#services {
+  margin-bottom: 20px;
+}
+
+.card-body {
+  min-height: 200px;
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+
+/* reviews */
+
+#reviews {
+  background-color: #f2f2f2;
+  min-height: calc(100vh - 70px);
+}
+
+/* contact */
+
+#col-contact {
+  background: url("../../assets/img/contact-us-vector.jpg") no-repeat center center;
+  background-size: contain;
+}
+
