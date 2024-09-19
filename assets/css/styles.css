@@ -113,7 +113,7 @@ h2 {
 }
 
 .card-body {
-  min-height: 200px;
+  height: 200px;
 }
 
 .fit-cover {
@@ -124,7 +124,50 @@ h2 {
 
 #reviews {
   background-color: #f2f2f2;
-  min-height: calc(100vh - 70px);
+}
+
+.review-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card .reviewer-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.review-card .review-content {
+  font-size: 16px;
+  color: #666;
+}
+
+.review-card .review-rating {
+  color: #ffc107;
+}
+
+.form-section {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.total-reviews {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 1rem;
 }
 
 /* contact */
