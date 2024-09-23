@@ -141,6 +141,11 @@ h2 {
   color: #333;
 }
 
+.reviewer-info {
+  display: flex;
+  gap: 1rem;
+}
+
 .review-card .review-content {
   font-size: 16px;
   color: #666;
