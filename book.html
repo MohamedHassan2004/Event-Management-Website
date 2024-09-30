@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akshar&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/login_register.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/profile.css">
@@ -19,15 +18,37 @@
 </head>
 
 <body>
-    <div class="d-flex justify-content-center align-items-center align-content-center align-self-center d-flex justify-content-center" id="login">    <form class="form">
-        <p class="title">Login </p>
-        <p class="message">login to your account. </p>
-        <label><input class="input" required placeholder type="email" /><span>Email</span></label>
-        <label><input class="input" required placeholder type="password" /><span>Password</span><i class="fas fa-eye toggle-password" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"></i></label>
-
-        <button class="submit">Login</button>
-        <p class="signin">Don't have an account ? <a href="register.html">Signup</a></p>
-    </form></div>
+    <div id="book-event"><form class="form">
+  <p class="title">Book Event</p>
+  <p class="message">Book your event easily</p>
+    <label for="name">Event:
+        <input type="text" class ="input" value="Wedding"readonly></label>
+  <label for="place">Select Place
+    <select name="place" id="place" class="input" required>
+      <option value="" disabled selected>Select your option</option>
+      <option value="Fairmont">Fairmont</option>
+      <option value="Conrad">Conrad</option>
+      <option value="4season">4 Seasons</option>
+      <option value="Hilton">Hilton</option>
+    </select>
+  </label>
+  <label>Select Date:
+    <div style="position: relative">
+      <input type="date" class="input" id="event-date" required />
+    </div>
+  </label>
+  <label>Select Time:
+    <div style="position: relative">
+      <input type="time" class="input" required />
+    </div>
+  </label>
+  <label for="guestsNumber">Number of Guests:
+    <input type="number" name="guest" id="guestsNumber" class="input" id="guestsNumber" required />
+  </label>
+  <button class="submit">Submit</button>
+  <p class="signin"><a href="index.html">Back Home</a></p>
+</form>
+</div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/book.js"></script>
     <script src="assets/js/password.js"></script>

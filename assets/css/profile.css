@@ -3,6 +3,7 @@
 #profile-page-container {
   min-height: 100vh;
   box-sizing: border-box;
+  /*background-color: #fff;*/
 }
 
 /* profile card */
@@ -61,5 +62,9 @@
 
 .countdown-container {
   margin-top: 0.75rem;
+}
+
+.profile-card {
+  background-color: #fff;
 }
 
