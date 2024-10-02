@@ -25,19 +25,23 @@
 
 
         if (password !== confirmPassword) {
-            errorMessage.style.display = 'block';
             confirmPassColor.style.color = 'red';// Show error message
             return false; // Prevent form submission
         } else {
-            errorMessage.style.display = 'none'; // Hide error message
+            
+            confirmPassColor.style.color = 'green';
             return true; // Allow form submission
         }
     }
 
     // Attach the check to form submission
+    document.getElementById('registerForm').addEventListener('input', function (event) {
+        if (!checkPasswordsMatch()) {   
+        }
+    });
+   // Attach the check to form submission
     document.getElementById('registerForm').addEventListener('submit', function (event) {
         if (!checkPasswordsMatch()) {
             event.preventDefault();
-
         }
     });
