@@ -182,3 +182,7 @@ h2 {
   background-size: contain;
 }
 
+#reviews-row {
+  height: 200px;
+}
+

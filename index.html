@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akshar&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/login_register.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/profile.css">
@@ -42,7 +44,7 @@
     <main>
         <div id="hero-section">
             <div class="container">
-                <section class="hero-banner py-5">
+                <section class="jello animated hero-banner py-5">
                     <div class="container h-100">
                         <div class="row h-100">
                             <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
@@ -175,14 +177,9 @@
             </div>
         </div>
         <div id="reviews" class="pt-5">
-            <div class="container"><h1 class="text-center mb-4">Client Reviews</h1>
-
-    <!-- Total Reviews Section -->
-    <div class="text-center mb-4">
-      <span class="total-reviews">Total Reviews: 2</span>
-    </div>
-
-    <!-- Review Card 1 -->
+            <div class="container">
+                <h1 class="text-center mb-4">Client Reviews</h1>
+                <div id="clients-reviews" class="container">
     <div class="row">
       <div class="col-md-6 mx-auto">
         <div class="review-card">
@@ -207,36 +204,7 @@
           <p class="review-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ligula a nisi lobortis egestas."</p>
         </div>
       </div>
-    </div>
-
-    <!-- Review Card 2 -->
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <div class="review-card">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-          <div class="reviewer-info">
-                <img src="assets/img/avatar.jpg" class="profile-img"/>
-                <div>
-              <div class="reviewer-name">Jane Smith</div>
-              <div class="ml-2 review-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              </div>
-            </div>
-            <div>
-              <div>1 week ago</div>
-            </div>
-          </div>
-          <p class="review-content">"Vestibulum non odio ut leo consequat faucibus. Nulla facilisi. Maecenas euismod magna eget felis suscipit, vel interdum ante lacinia."</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Review Submission Form -->
+    </div></div>    <!-- Review Submission Form -->
     <div class="row">
       <div class="col-md-6 mx-auto">
         <div class="form-section">
@@ -264,7 +232,8 @@
           </form>
         </div>
       </div>
-    </div></div>
+    </div>
+            </div>
         </div>
         <div id="contact" class="text-center">
             <section class="position-relative py-4 py-xl-5">
@@ -274,7 +243,7 @@
                         <div class="col col-xl-4 col-md-5" id="col-contact">
                             <div></div>
                         </div>
-                        <div class="col-xl-4 col-xl-4 col-md-5">
+                        <div class="col-lg-4 col-xl-4 col-xl-4 col-md-5">
                             <form class="p-3 p-xl-4" method="POST" action="https://api.web3forms.com/submit"><input type="hidden" name="access_key" value="159ccb73-5993-4e33-ab0d-013157dda0cf">
                                 <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Name"></div>
                                 <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email"></div>
@@ -305,6 +274,7 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/book.js"></script>
     <script src="assets/js/password.js"></script>
     <script src="assets/js/profile.js"></script>
