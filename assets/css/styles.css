@@ -181,3 +181,29 @@ h2 {
   background-size: contain;
 }
 
+.read-more {
+  color: var(--bs-blue);
+}
+
+.read-more:hover {
+  color: darkblue;
+  cursor: pointer;
+}
+
+#review-header {
+  display: flex;
+}
+
+@media (max-width: 400px) {
+  #review-header {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .review-time {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+

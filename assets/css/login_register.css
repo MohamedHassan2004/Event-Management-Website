@@ -160,3 +160,25 @@
   padding: 10px;
 }
 
+.event-name {
+  color: #888888;
+}
+
+#review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  #login form, #register form, #book-event form {
+    width: 97%;
+  }
+}
+
