@@ -1,57 +1,58 @@
-let reviewsCard = document.querySelectorAll(".review-card");
-let array = Array.from(reviewsCard);
+const reviewsCard = document.querySelectorAll(".review-card");
+const reviews = Array.from(reviewsCard);
 
-let reviewRow = document.querySelector("#reviews-row");
+const reviewRow = document.querySelector("#reviews-row");
 reviewRow.innerHTML = "";
-var i = 0;
+let i = 0;
 
+const l = document.querySelector("#l");
+const r = document.querySelector("#r");
 
-let l = document.querySelector("#l");
-let r = document.querySelector("#r");
-
-if(array.length == 0){
+if(reviews.length == 0){
     let noReviewsP = document.createElement('p');
     noReviewsP.innerHTML = "There's No Reviews Yet";
     noReviewsP.className = "text-center";
     reviewRow.appendChild(noReviewsP);
     l.style.display = "none";
     r.style.display = "none";   
-}else if (array.length == 1){
+}else if (reviews.length == 1){
     changeContent("+");
     l.style.display = "none";
     r.style.display = "none"; 
-}
-else{
+}else{
     changeContent("+");
     l.addEventListener('click', ()=> changeContent("-"));
     r.addEventListener('click',()=>changeContent("+"));
 }
 
-let reviewsNo = document.querySelector('#reviews-no');
-reviewsNo.innerHTML = array.length;
+const reviewsNo = document.querySelector('#reviews-no');
+reviewsNo.innerHTML = reviews.length;
 reviewsNo.style.color = "#0d6efd";
 
 /**********************************************************************/
 
+
 function changeContent(sign){
     reviewRow.innerHTML = "";
     if(sign == "+"){
-        i = (i + 1) % array.length;
+        i = (i + 1) % reviews.length;
     }else{
-        if(i == 0) i = array.length;
+        if(i == 0) i = reviews.length;
         i = (i - 1);
     }
-    reviewRow.appendChild(justifiedReview(array[i]));
+    justifiedReview(reviews[i])
+    reviewRow.appendChild(reviews[i]);
 }
 
 function justifiedReview(x){
-    maxLen = 400;
-    p = x.querySelector('p');
-    tmp = p.textContent;
-    if(tmp.length > maxLen){
-        p.innerHTML = `${tmp.slice(0,maxLen)}...<span class = "read-more">read more</span>`;
-        let readmore = p.querySelector('.read-more');
-        readmore.addEventListener('click',()=> p.innerHTML = tmp);
-    }
-    return x;
+    let p = x.querySelector('.review-content');
+    let readMore = x.querySelector('.read-more');
+
+    p.classList.add('over-content');
+    readMore.style.display = "block";
+
+    readMore.addEventListener('click',() => {
+        p.classList.remove('over-content')
+        readMore.style.display = "none";
+    });
 }
