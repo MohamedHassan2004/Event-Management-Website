@@ -134,7 +134,7 @@
   }
 }
 
-#register, #login, #profile-page, #book-event {
+#register, #login, #book-event {
   min-height: 100vh;
   font-family: 'Allerta';
   background-color: #f9f9f9;
@@ -146,7 +146,6 @@
   align-items: center;
   height: 100vh;
   padding: 1rem;
-  padding-top: 65px;
   flex-direction: column;
 }
 
